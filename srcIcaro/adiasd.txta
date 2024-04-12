@@ -1,0 +1,97 @@
+FORM1.CS
+
+
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+
+namespace ZapBot_icaro
+{
+    public partial class BotIcaroForm : Form
+    {
+        public BotIcaroForm()
+        {
+            InitializeComponent();
+            InitializeListView();
+        }
+
+        private void InitializeListView()
+        {
+            listView1.Columns.Add("Nome", 70);
+            listView1.Columns.Add("Número", 80);
+            listView1.Columns.Add("Status", 50);
+        }
+        private void BotIcaroForm_Load(object sender, EventArgs e)
+        {
+            // Qualquer lógica adicional que você queira executar quando o formulário é carregado
+        }
+        private void btn_Adicionar_Click(object sender, EventArgs e)
+        {
+            ListViewItem newItem = new ListViewItem(textBox_nome.Text);
+            newItem.SubItems.Add(textBox_numero.Text);
+            newItem.SubItems.Add(textBox_status.Text);
+            listView1.Items.Add(newItem);
+
+            ClearTextBoxes();
+        }
+
+        private void ClearTextBoxes()
+        {
+            textBox_nome.Text = string.Empty;
+            textBox_numero.Text = string.Empty;
+            textBox_status.Text = string.Empty;
+        }
+
+        private void btn_Enviar_Click(object sender, EventArgs e)
+        {
+            string msg = richTextBox_mensagem.Text;
+            string nome = textBox_nome.Text;
+
+            // Chame o método apropriado de WhatsAppEnvioMessagem para enviar a mensagem
+            // WhatsAppEnvioMessagem w = new WhatsAppEnvioMessagem();
+            // w.SendMessage(msg, nome);
+            // w.SendMessageWithImage(msg, "C:\\Caminho\\Para\\SuaImagem.jpg", nome);
+            // w.SendMessageWithEmoji(msg, new List<string> { "carro" }, nome);
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            // Lógica para manipular o texto alterado no richTextBox1, se necessário.
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            // Lógica para manipular o texto alterado no textBox1, se necessário.
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            // Lógica para manipular o clique no label1, se necessário.
+        }
+
+        private void btn_DeletarTudo_Click(object sender, EventArgs e)
+        {
+            // Lógica para deletar todos os itens na lista, se necessário.
+        }
+
+        private void btn_Deletar_Click_2(object sender, EventArgs e)
+        {
+            // Lógica para deletar o item selecionado na lista, se necessário.
+        }
+
+        private void btnEnvio_Click(object sender, EventArgs e)
+        {
+            // Lógica para o clique no botão btnEnvio, se necessário.
+        }
+
+        private void label_nome_Click(object sender, EventArgs e)
+        {
+            // Lógica para manipular o clique no label_nome, se necessário.
+        }
+
+        private void label_numero_Click(object sender, EventArgs e)
+        {
+            // Lógica para manipular o clique no label_numero, se necessário.
+        }
+    }
+}

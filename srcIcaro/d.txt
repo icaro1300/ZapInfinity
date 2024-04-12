@@ -1,0 +1,71 @@
+Form1.Designer.cs
+
+namespace ZapBot_icaro
+{
+    partial class BotIcaroForm
+    {
+        // ... código gerado pelo Windows Form Designer ...
+
+        private void InitializeComponent()
+        {
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // listView2
+            // 
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(398, 12);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(353, 166);
+            this.listView2.TabIndex = 0;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // BotIcaroForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.YellowGreen;
+            this.ClientSize = new System.Drawing.Size(781, 377);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.listView2);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "BotIcaroForm";
+            this.Text = "BotIcaroForm";
+            this.Load += new System.EventHandler(this.BotIcaroForm_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        private System.Windows.Forms.TextBox textBox_status;
+        private System.Windows.Forms.Label label_status;
+        private System.Windows.Forms.TextBox textBox_numero;
+        private System.Windows.Forms.Label label_numero;
+        private System.Windows.Forms.TextBox textBox_nome;
+        private System.Windows.Forms.Label label_nome;
+        private System.Windows.Forms.Button btn_Enviar;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btn_Adicionar;
+        private System.Windows.Forms.Button btn_Deletar;
+        private System.Windows.Forms.Button btn_DeletarTudo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RichTextBox richTextBox_mensagem;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.Label label1;
+    }
+}

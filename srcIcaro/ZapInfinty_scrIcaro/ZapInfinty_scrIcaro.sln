@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZapInfinty_scrIcaro", "ZapInfinty_scrIcaro\ZapInfinty_scrIcaro.csproj", "{97D88091-8727-4DCE-B95D-90A85526ADCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97D88091-8727-4DCE-B95D-90A85526ADCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D88091-8727-4DCE-B95D-90A85526ADCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D88091-8727-4DCE-B95D-90A85526ADCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D88091-8727-4DCE-B95D-90A85526ADCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82968267-DCDD-46AB-992E-020A21601DE1}
+	EndGlobalSection
+EndGlobal

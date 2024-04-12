@@ -1,0 +1,23 @@
+Abaixo da pictureBox
+
+
+private void SetPictureBoxImageLocation(string imagePath)
+{
+    if (!string.IsNullOrEmpty(imagePath))
+    {
+        try
+        {
+            PictureBox.ImageLocation = imagePath;
+        }
+        catch (Exception ex)
+        {
+            // Lidar com qualquer exceção que possa ocorrer ao definir o caminho da imagem
+            MessageBox.Show("Erro ao carregar a imagem: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+    }
+    else
+    {
+        // Lidar com casos onde o caminho da imagem é nulo ou vazio
+        MessageBox.Show("Caminho da imagem inválido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+    }
+}
